@@ -1,46 +1,44 @@
 # Car-Price-Prediction-Model-Using-Linear-Regression
 In this project, a comprehensive approach was taken to develop a machine learning model for predicting the selling prices of used cars.
 
-## Description:  
-This project involves analyzing a dataset of car sell records, which contains thousands of entries. The aim is to clean the data, explore key statistical properties, visualize relationships, and remove outliers based on certain criteria. Various techniques are applied to understand the factors that influence car selling prices and the patterns in the data.
+## Description
+This project focuses on two goals: training linear regression models to predict car selling prices and discussing data ethics issues. The first goal is achieved through a standard Data Science workflow, which includes data exploration, feature selection, model training, and performance evaluation. Additionally, the project analyzes how training data size and feature selection impact model performance. The second goal explores ethical concerns related to data presentation.
 
-## Table of Contents:
-1. [Description of Dataset](#description-of-dataset)
-2. [Technologies Used](#technologies-used)
-3. [Requirements](#requirements)
-4. [License Information](#license-information)
+## Features
+- **Data Import and Exploration**: Loaded and explored a cleaned car sell dataset, examining correlations between features and the selling price.
+- **Feature Encoding**: Converted categorical features (seller_type, fuel, owner) into numerical values using `OrdinalEncoder` from `sklearn.preprocessing`.
+- **Model Training**: Trained multiple linear regression models using various feature combinations and dataset sizes.
+- **Model Evaluation**: Evaluated the models using metrics like Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared.
+- **Data Ethics Analysis**: Examined ethical concerns related to data presentation in visualizations.
+---
 
-## Description of Dataset:
-The dataset contains the following columns:
+## Table of Contents
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Requirements](#requirements)
+- [License](#license)
 
-| name | year | selling_price | km_driven | fuel | seller_type | transmission | owner |
-| ---- | ---- | ------------- | --------- | ---- | ----------- | ------------ | ----- |
+---
 
-### Description of Fields:
-- **name**: Type or model of the car sold.
-- **year**: The year the car was bought.
-- **selling_price**: The selling price of the car.
-- **km_driven**: Kilometers driven by the car.
-- **fuel**: The type of fuel used by the car (petrol, diesel, CNG, LPG, electric).
-- **seller_type**: Identifies if the seller is an individual or a dealer.
-- **transmission**: Type of transmission (Automatic/Manual).
-- **owner**: The number of previous owners of the car.
+## Technologies Used
+- Python 3.x
+- Pandas (Data manipulation)
+- NumPy (Numerical computing)
+- Scikit-learn (Machine learning)
+- Seaborn & Matplotlib (Data visualization)
+- Jupyter Notebook (Interactive environment)
 
-### Analysis Questions:
-- **Q1**: Data cleaning by removing missing values.
-- **Q2**: Descriptive statistics for unique names, seller types, transmissions, and owners.
-- **Q3**: Visual analysis of factors affecting selling price.
-- **Q4**: Detection and removal of outliers.
+---
 
-## Technologies Used:
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-
-## Requirements:
-1. Python 3.x
-2. Pandas
-3. NumPy
-4. Matplotlib
-5. Seaborn
+## Requirements
+Before running the project, ensure you have the following installed:
+- Python 3.x
+- Pandas
+- NumPy
+- Scikit-learn
+- Seaborn
+- Matplotlib
+- Jupyter Notebook
 
 ## License Information:
 This project is under MIT license
